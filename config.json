@@ -1,0 +1,28 @@
+{
+  "language": "ru",
+  "rounds": 3,
+  "opener": "eva",
+  "llm": {
+    "base_url": "http://127.0.0.1:20128/v1",
+    "api_key": "omniroute-token",
+    "model_eva": "omni/cf-mistral-small-3.1",
+    "model_adam": "omni/cf-qwen2.5-coder-32b",
+    "model_synthesizer": "omni/cf-llama-3.3-70b",
+    "temperature": 0.7,
+    "max_tokens": 700
+  },
+  "voice": {
+    "enabled": false,
+    "speak_live": false,
+    "save_audio": true,
+    "rate": "+0%",
+    "volume": "+0%",
+    "voices": {
+      "ru": { "eva": "ru-RU-SvetlanaNeural", "adam": "ru-RU-DmitryNeural" },
+      "uk": { "eva": "uk-UA-PolinaNeural", "adam": "uk-UA-OstapNeural" },
+      "en": { "eva": "en-US-AriaNeural", "adam": "en-US-GuyNeural" }
+    }
+  },
+  "transcripts_dir": "transcripts",
+  "audio_dir": "audio"
+}
