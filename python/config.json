@@ -1,8 +1,7 @@
 {
-  "mode": "dialogue",
-  "ordering": "eva-adam",
-  "rounds": 3,
   "language": "ru",
+  "rounds": 3,
+  "opener": "eva",
   "llm": {
     "base_url": "http://127.0.0.1:20128/v1",
     "api_key": "omniroute-token",

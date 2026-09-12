@@ -1,0 +1,43 @@
+{
+  "name": "adam-eva",
+  "version": "2.0.0",
+  "description": "Adam & Eva — pluggable two-AI deliberation plugin (dialogue + interview modes, eva-adam / adam-eva ordering) with text, Edge-TTS voice and transcript output.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:build": "npm run build && node --experimental-strip-types --test tests/*.test.ts",
+    "cli": "node --experimental-strip-types src/cli.ts",
+    "voice-bridge": "python3 voice_bridge.py",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "adam",
+    "eva",
+    "dialogue",
+    "interview",
+    "multi-agent",
+    "llm",
+    "plugin",
+    "evaline"
+  ],
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2"
+  }
+}

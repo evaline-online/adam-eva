@@ -7,3 +7,6 @@ audio/*.mp3
 .idea/
 .vscode/
 .DS_Store
+node_modules/
+dist/
+*.tsbuildinfo
